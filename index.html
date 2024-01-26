@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sunset">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +7,93 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <div class="card w-96 bg-neutral text-neutral-content">
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Cookies!</h2>
-          <p>We are using cookies for no reason.</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Accept</button>
-            <button class="btn btn-ghost">Deny</button>
+    <!-- comment      control slash= quick comment -->
+    <!-- ส่วน navbar -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <!-- dropdown menu -->
+          <div class="dropdown">
+            <!-- menu button -->
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </div>
+            <!-- จบส่วน menu button -->
+
+            <!-- list menu -->
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="index.html">หน้าแรก</a></li>
+              <li><a href="about.html">เกี่ยวกับฉัน</a></li>
+              <li><a href="contact.html">ช่องทางติดต่อ</a></li>
+            </ul>
+            <!-- จบส่วน list menu -->
           </div>
+            <!--  จบส่วน dropdown menu -->
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl" href="index.html">daisyUI</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
         </div>
       </div>
-</body>
+    <!-- จบส่วน navbar -->
+
+    <div class="container mx-auto sm px-4 bg-gray-700">
+      <!-- alert -->
+      <div role="alert" class="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>we use cookies for no reason.</span>
+        <div>
+          <button class="btn btn-sm">Deny</button>
+          <button class="btn btn-sm btn-primary">Accept</button>
+        </div>
+      </div>
+      <!--  จบ alert -->
+
+      <!-- keyboard -->
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd class="kbd">q</kbd>
+        <kbd class="kbd">w</kbd>
+        <kbd class="kbd">e</kbd>
+        <kbd class="kbd">r</kbd>
+        <kbd class="kbd">t</kbd>
+        <kbd class="kbd">y</kbd>
+        <kbd class="kbd">u</kbd>
+        <kbd class="kbd">i</kbd>
+        <kbd class="kbd">o</kbd>
+        <kbd class="kbd">p</kbd>
+      </div> 
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd class="kbd">a</kbd>
+        <kbd class="kbd">s</kbd>
+        <kbd class="kbd">d</kbd>
+        <kbd class="kbd">f</kbd>
+        <kbd class="kbd">g</kbd>
+        <kbd class="kbd">h</kbd>
+        <kbd class="kbd">j</kbd>
+        <kbd class="kbd">k</kbd>
+        <kbd class="kbd">l</kbd>
+      </div> 
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd class="kbd">z</kbd>
+        <kbd class="kbd">x</kbd>
+        <kbd class="kbd">c</kbd>
+        <kbd class="kbd">v</kbd>
+        <kbd class="kbd">b</kbd>
+        <kbd class="kbd">n</kbd>
+        <kbd class="kbd">m</kbd>
+        <kbd class="kbd">/</kbd>
+      </div>
+      <!-- จบ keyboard -->
+    </div>
+
+</body> 
 </html>
